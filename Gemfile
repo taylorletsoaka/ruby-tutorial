@@ -55,3 +55,27 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# learn rails
+# use rails without db
+gem 'activerecord-tableless'
+# support for Zurb foundation
+gem 'compass-rails', '~> 2.0.alpha.0'
+# config framework
+gem 'figaro'
+# access to MailChimp API
+gem 'gibbon'
+# use google drive spreadsheets for data storage
+gem 'google_drive'
+# for static pages like 'about'
+gem 'high_voltage'
+# front-end framework
+gem 'zurb-foundation'
+group :development do
+	# helps when things go wrong
+	gem 'better_errors'
+	# suppresses distracting messages in the log
+	gem 'quiet_assets'
+	# generates files for an app layout
+	gem 'rails_layout'
+end
